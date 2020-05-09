@@ -11,10 +11,10 @@ class BrowseButton extends StatelessWidget {
       children: <Widget>[
         Container(
           margin: EdgeInsets.only(bottom: 4),
-          width: 50,
+          width: 68,
           height: 50,
           decoration: BoxDecoration(
-              color: Color(0xFFEEF1F8), borderRadius: BorderRadius.circular(8)),
+              color: Colors.white, borderRadius: BorderRadius.circular(8)),
           child: Center(
             child: SizedBox(
                 height: 36,
@@ -35,13 +35,13 @@ class BrowseButton extends StatelessWidget {
   String getImage(String genre) {
     switch (genre) {
       case "Horror":
-        return "assets/ic_movie.png";
+        return "assets/ic_horror.png";
         break;
       case "Music":
-        return "assets/ic_movie.png";
+        return "assets/ic_music.png";
         break;
       case "Action":
-        return "assets/ic_movie.png";
+        return "assets/ic_action.png";
         break;
       case "Drama":
         return "assets/ic_movie.png";

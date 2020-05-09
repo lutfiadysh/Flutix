@@ -64,6 +64,11 @@ flutter:
     - assets/user.png
     - assets/ic_movie_unclick.png
     - assets/account.png
+    - assets/ic_horror.png
+    - assets/ic_action.png
+    - assets/ic_music.png
+    - assets/reflection2.png
+    - assets/reflection1.png
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

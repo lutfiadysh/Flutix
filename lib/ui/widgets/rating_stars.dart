@@ -4,11 +4,15 @@ class RatingStars extends StatelessWidget {
   final double voteAverage;
   final double starSize;
   final double fontSize;
+  final Color color;
+  final MainAxisAlignment alignment;
 
   RatingStars({
     this.voteAverage = 0,
     this.fontSize = 12,
-    this.starSize = 20
+    this.starSize = 20,
+    this.color,
+    this.alignment = MainAxisAlignment.start
   });
 
   @override
@@ -25,7 +29,8 @@ class RatingStars extends StatelessWidget {
          .copyWith(fontWeight: FontWeight.w300,fontSize: fontSize),));
 
     return Row(
-        children: widgets,
+      mainAxisAlignment: alignment,
+      children: widgets,
     );
   }
 }

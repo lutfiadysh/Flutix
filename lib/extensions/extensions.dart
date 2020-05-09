@@ -3,3 +3,4 @@ import 'package:flutix/models/models.dart';
 import 'package:flutix/services/services.dart';
 
 part 'firebase_user_extensions.dart';
+part 'date_time_extension.dart';

@@ -4,3 +4,6 @@ import 'package:flutter/material.dart';
 part 'user_models.dart';
 part 'registration_data.dart';
 part 'movie.dart';
+part 'promo.dart';
+part 'movie_details.dart';
+part 'credit.dart';

@@ -48,11 +48,11 @@ class _MainPageState extends State<MainPage> {
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         gradient: LinearGradient(
-          begin: Alignment.topRight,
-          end: Alignment.bottomLeft,
+          begin: Alignment.centerRight,
+          end: Alignment.centerLeft,
           colors: [
             accentColor2,
-            Color(0xFFb38e22),
+            Color(0xFFa19e0e),
           ],
         ),
         boxShadow: <BoxShadow>[
