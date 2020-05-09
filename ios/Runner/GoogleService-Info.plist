@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>353319311643-ocknoj1gfga4inu1ardrte86utaskha5.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.353319311643-ocknoj1gfga4inu1ardrte86utaskha5</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB3mOMBpGoMpF_OY_GgM7-q3GvdWaOSTIg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>353319311643</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.latech.flutix</string>
+	<key>PROJECT_ID</key>
+	<string>flutix-4430e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>flutix-4430e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:353319311643:ios:863122cae97b7ea5b6dbbe</string>
+	<key>DATABASE_URL</key>
+	<string>https://flutix-4430e.firebaseio.com</string>
+</dict>
+</plist>

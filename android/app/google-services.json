@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "353319311643",
+    "firebase_url": "https://flutix-4430e.firebaseio.com",
+    "project_id": "flutix-4430e",
+    "storage_bucket": "flutix-4430e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353319311643:android:9fa3c3f6386c3783b6dbbe",
+        "android_client_info": {
+          "package_name": "com.latech.flutix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353319311643-oopg3gnm0j1i6oosud3jgl22bt2h47uf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCkIT0j9DpoxA7wJRcGYTqLWHHNjEUtQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "353319311643-oopg3gnm0j1i6oosud3jgl22bt2h47uf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
