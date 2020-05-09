@@ -18,7 +18,7 @@ class BrowseButton extends StatelessWidget {
           child: Center(
             child: SizedBox(
                 height: 36,
-                child: Image(image: AssetImage(getImageFromGenre(genre)))),
+                child: Image(image: AssetImage(getImage(genre)))),
           ),
         ),
         SizedBox(
@@ -32,25 +32,25 @@ class BrowseButton extends StatelessWidget {
     );
   }
 
-  String getImageFromGenre(String genre) {
+  String getImage(String genre) {
     switch (genre) {
       case "Horror":
-        return "assets/ic_horror.png";
+        return "assets/ic_movie.png";
         break;
       case "Music":
-        return "assets/ic_music.png";
+        return "assets/ic_movie.png";
         break;
       case "Action":
-        return "assets/ic_action.png";
+        return "assets/ic_movie.png";
         break;
       case "Drama":
-        return "assets/ic_drama.png";
+        return "assets/ic_movie.png";
         break;
       case "War":
-        return "assets/ic_war.png";
+        return "assets/ic_movie.png";
         break;
       case "Crime":
-        return "assets/ic_crime.png";
+        return "assets/ic_movie.png";
         break;
       default:
         return "";

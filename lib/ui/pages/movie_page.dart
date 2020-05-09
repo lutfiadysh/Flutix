@@ -132,7 +132,7 @@ class MoviePage extends StatelessWidget {
             style: blackTextFont.copyWith(fontSize: 18,fontWeight: FontWeight.bold),),
         ),
         BlocBuilder<UserBloc, UserState>(
-          builder: (_, userState) {
+          builder: (context, userState) {
             if (userState is UserLoaded) {
               return Container(
                 margin: EdgeInsets.symmetric(horizontal: defaultMargin),
