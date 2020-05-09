@@ -75,7 +75,28 @@ class _MainPageState extends State<MainPage> {
       ),
       child: FloatingActionButton(
         onPressed: () {
-          AuthServices.signOut();
+          CupertinoAlertDialog alertDialog = CupertinoAlertDialog(
+            title: Text('Confirm Log Out'),
+            content: Text('Are you sure you want to log out?'),
+            actions: <Widget>[
+              CupertinoDialogAction(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: Text('Cancel'),
+              ),
+              CupertinoDialogAction(
+                onPressed: () {
+                  Navigator.pop(context);
+                  AuthServices.signOut();
+                },
+                isDestructiveAction: true,
+                child: Text('Yes'),
+              ),
+            ],
+          );
+
+          showDialog(context: context, builder: (context) => alertDialog);
         },
         child: Icon(Icons.account_balance_wallet),
         backgroundColor: Colors.transparent,

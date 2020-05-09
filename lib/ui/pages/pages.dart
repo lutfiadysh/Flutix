@@ -2,6 +2,7 @@ import 'package:flutix/bloc/bloc.dart';
 import 'package:flutix/extensions/extensions.dart';
 import 'package:flutix/main.dart';
 import 'package:flutix/shared/shared.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:provider/provider.dart';

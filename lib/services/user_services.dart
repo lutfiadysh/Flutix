@@ -20,7 +20,7 @@ class UserServices {
     return User(id,snapshot.data['email'],
         balance: snapshot.data['balance'],
         profilePicture: snapshot.data['profilePicture'],
-        selectedGenres: (snapshot.data['selectGenres'] as List),
+        selectedGenres: List.from(snapshot.data['selectedGenre']),
         selectedLanguage: snapshot.data['selectLanguage'],
         name: snapshot.data['name']
     );
