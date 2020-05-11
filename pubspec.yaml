@@ -42,6 +42,7 @@ dev_dependencies:
   rflutter_alert: ^1.0.3
   firebase_storage: ^3.1.5
   http: ^0.12.1
+  random_string: ^2.0.1
 
 
 
@@ -69,6 +70,7 @@ flutter:
     - assets/ic_music.png
     - assets/reflection2.png
     - assets/reflection1.png
+    - assets/screen.png
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

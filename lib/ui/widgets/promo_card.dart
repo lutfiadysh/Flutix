@@ -18,32 +18,39 @@ class PromoCard extends StatelessWidget {
           child:Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Text(
-                    promo.title,
-                    style: whiteTextFont,
-                  ),
-                  Text(
-                    promo.subtitle,
-                    style: whiteTextFont.copyWith(
-                        fontSize: 11, fontWeight: FontWeight.w300),
-                  )
-                ],
+              Expanded(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      promo.title,
+                      style: whiteTextFont,
+                    ),
+                    Text(
+                      promo.subtitle,
+                      style: whiteTextFont.copyWith(
+                          fontSize: 11, fontWeight: FontWeight.w300),
+                      overflow:TextOverflow.ellipsis,
+                    )
+                  ],
+                ),
               ),
               Row(
                 children: <Widget>[
                   Text(
                     "OFF ",
                     style: yellowNumberFont
-                        .copyWith(fontSize: 18,fontWeight: FontWeight.w300),),
+                        .copyWith(fontSize: 18,fontWeight: FontWeight.w300),
+
+                    overflow:TextOverflow.ellipsis,
+                  ),
                   Text("${promo.discount}%",
                     style:
                     yellowNumberFont
                         .copyWith(
-                          fontSize: 18,fontWeight: FontWeight.w600),),
+                          fontSize: 18,fontWeight: FontWeight.w600),
+                    overflow:TextOverflow.ellipsis,),
                 ],
               )
             ],

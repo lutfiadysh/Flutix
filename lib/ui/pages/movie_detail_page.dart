@@ -118,11 +118,17 @@ class MovieDetailPage extends StatelessWidget {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: <Widget>[
-                                RatingStars(
-                                  voteAverage: movie.voteAverage,
-                                  color: accentColor3,
+                                Container(
+                                  child: Row(
+                                    children: <Widget>[
+                                      RatingStars(
+                                        voteAverage: movie.voteAverage,
+                                        color: accentColor3,
+                                      ),
+                                      Text("${movie.voteAverage.toString()}/10"),
+                                    ],
+                                  ),
                                 ),
-                                Text("${movie.voteAverage.toString()}/10"),
                               ],
                             ),
                             SizedBox(
@@ -201,9 +207,9 @@ class MovieDetailPage extends StatelessWidget {
                                   style: whiteTextFont.copyWith(fontSize: 16),
                                 ),
                                 onPressed: () {
-//                                  context
-//                                      .bloc<PageBloc>()
-//                                      .add(GoToSelectSchedulePage(movieDetail));
+                                  context
+                                      .bloc<PageBloc>()
+                                      .add(GoToSelectSchedulePage(movieDetail));
                                 }),
                             SizedBox(height: defaultMargin)
                           ],

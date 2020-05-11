@@ -167,7 +167,7 @@ class _SelectSchedulePageState extends State<SelectSchedulePage> {
               selectedTheater == theater && selectedTime == schedule[index],
               isEnabled: schedule[index] > DateTime.now().hour ||
                   selectedDate.day != DateTime.now().day,
-              onTap: () {
+              OnTap: () {
                 setState(() {
                   selectedTheater = theater;
                   selectedTime = schedule[index];

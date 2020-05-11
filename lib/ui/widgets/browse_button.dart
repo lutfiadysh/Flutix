@@ -11,10 +11,10 @@ class BrowseButton extends StatelessWidget {
       children: <Widget>[
         Container(
           margin: EdgeInsets.only(bottom: 4),
-          width: 68,
+          width: 50,
           height: 50,
           decoration: BoxDecoration(
-              color: Colors.white, borderRadius: BorderRadius.circular(8)),
+              color: Colors.transparent, borderRadius: BorderRadius.circular(8)),
           child: Center(
             child: SizedBox(
                 height: 36,

@@ -18,6 +18,7 @@ import 'package:flutix/models/models.dart';
 import 'dart:io';
 import 'package:rflutter_alert/rflutter_alert.dart';
 import 'package:flutix/ui/widgets/widgets.dart';
+import 'package:random_string/random_string.dart';
 
 part 'main_page.dart';
 part 'sign_in_page.dart';
@@ -29,4 +30,6 @@ part 'preference_page.dart';
 part 'account_confirmation_page.dart';
 part 'movie_detail_page.dart';
 part 'select_schedule_page.dart';
+part 'select_seat_page.dart';
+part 'checkout_page.dart';
 
