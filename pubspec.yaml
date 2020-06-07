@@ -71,6 +71,8 @@ flutter:
     - assets/reflection2.png
     - assets/reflection1.png
     - assets/screen.png
+    - assets/ticket_done.png
+    - assets/top_up_done.png
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

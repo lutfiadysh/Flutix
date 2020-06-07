@@ -19,8 +19,10 @@ import 'dart:io';
 import 'package:rflutter_alert/rflutter_alert.dart';
 import 'package:flutix/ui/widgets/widgets.dart';
 import 'package:random_string/random_string.dart';
+import 'package:flutix/extensions/extensions.dart';
 
 part 'main_page.dart';
+part 'succes_page.dart';
 part 'sign_in_page.dart';
 part 'wrapper.dart';
 part 'splash_page.dart';
