@@ -18,6 +18,8 @@ class Wrapper extends StatelessWidget {
 
       if(!(prevPageEvent is GoToMainPage)){
         context.bloc<UserBloc>().add(LoadUser(firebaseUser.uid));
+        context.bloc<TicketBloc>().add(GetTicket(firebaseUser.uid));
+        
         prevPageEvent = GoToMainPage();
         context.bloc<PageBloc>().add(prevPageEvent);
       }
@@ -36,6 +38,8 @@ class Wrapper extends StatelessWidget {
         : (pageState is OnSelectSeatPage) ? SelectSeatPage(pageState.ticket)
         : (pageState is OnCheckoutPage) ? CheckoutPage(pageState.ticket)
         : (pageState is OnSuccessPage) ? SuccessPage(pageState.ticket,pageState.transaction)
+        : (pageState is OnTicketDetailPage) ? TicketDetailPage(pageState.ticket)
+        : (pageState is OnProfilePage) ? ProfilePage()
         : MainPage());
   }
 }

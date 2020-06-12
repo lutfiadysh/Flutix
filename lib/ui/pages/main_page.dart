@@ -33,7 +33,7 @@ class _MainPageState extends State<MainPage> {
         children: <Widget>[
           MoviePage(),
           Center(
-            child: Text('My Tickets'),
+            child: TicketPage(),
           ),
         ],
       ),
@@ -48,11 +48,11 @@ class _MainPageState extends State<MainPage> {
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         gradient: LinearGradient(
-          begin: Alignment.centerRight,
+          begin: Alignment.bottomRight,
           end: Alignment.centerLeft,
           colors: [
-            accentColor2,
             Color(0xFFa19e0e),
+            accentColor2,
           ],
         ),
         boxShadow: <BoxShadow>[

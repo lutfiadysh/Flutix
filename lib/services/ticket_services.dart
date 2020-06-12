@@ -26,7 +26,7 @@ class TicketServices {
     List<Ticket> tickets = [];
     for (var document in documents) {
       MovieDetail movieDetail =
-      await MovieServices.getDetails(document.data['movieID']);
+      await MovieServices.getDetails(null, movieID: document.data['movieID']);
       tickets.add(Ticket(
           movieDetail,
           Theater(document.data['theaterName']),
