@@ -48,6 +48,7 @@ dev_dependencies:
 
 
 
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -80,6 +81,10 @@ flutter:
     - assets/user_pic.png
     - assets/language.png
     - assets/rate.png
+    - assets/help_centre.png
+    - assets/ic_crime.png
+    - assets/ic_myst.png
+    - assets/ic_check.png
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

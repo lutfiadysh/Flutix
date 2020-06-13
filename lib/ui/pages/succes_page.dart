@@ -13,8 +13,9 @@ class SuccessPage extends StatelessWidget {
       },
       child: Scaffold(
         body: FutureBuilder(
-          future: ticket != null ?
-          processingTicketOrder(context) : processingTopUp(),
+          future: ticket != null
+              ? processingTicketOrder(context)
+              : processingTopUp(context),
           builder:(context, snapshot)=> (snapshot.connectionState == ConnectionState.done)
               ? Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -103,7 +104,9 @@ class SuccessPage extends StatelessWidget {
 
     await TransactionServices.saveTransaction(transaction);
   }
-  Future<void> processingTopUp()async{
+  Future<void> processingTopUp(BuildContext contex)async{
+    contex.bloc<UserBloc>().add(TopUp(transaction.amount));
 
+    await TransactionServices.saveTransaction(transaction);
   }
 }

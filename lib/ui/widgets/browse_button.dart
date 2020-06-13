@@ -47,10 +47,10 @@ class BrowseButton extends StatelessWidget {
         return "assets/ic_movie.png";
         break;
       case "War":
-        return "assets/ic_movie.png";
+        return "assets/ic_myst.png";
         break;
       case "Crime":
-        return "assets/ic_movie.png";
+        return "assets/ic_crime.png";
         break;
       default:
         return "";
